@@ -1,4 +1,4 @@
-header, nav, section, aside, footer {
+header, nav, footer {
     border: 1px solid grey;
     background-color: #abc6dd;
     color: rgb(24, 4, 61);
@@ -6,11 +6,6 @@ header, nav, section, aside, footer {
     float: left;
     width: 100%;
     margin: 5px 0px;
-}
-
- 
-  
-  padding: 20px;
 }
 
 h2 {
@@ -38,29 +33,86 @@ h2 {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-  }
-
- 
-  main {
-    flex: 1;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-    padding: 20px;
+    
   }
 
   .container {
-    flex: 1;
     display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    height: 80vh;
+    align-items: center; /*aligns text*/
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-    padding: 20px;
-
+   
   }
-
   
+  .about {
+    background-color: aqua;
+    width: 300px;
+    height: 300px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 15px; /*creates rounded corners*/
+    
+  }
+  .contact {
+    background-color: black;
+    width: 300px;
+    height: 300px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 15px;
+  }
+  .project1 {
+    background-color: blueviolet;
+    width: 300px;
+    height: 300px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 15px;
+  }
+  .project2 {
+    background-color: rgb(5, 211, 115);
+    width: 300px;
+    height: 300px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 15px;
+  }
+  .project3 {
+    background-color: rgb(226, 43, 43);
+    width: 300px;
+    height: 300px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 15px;
+  }
+  .project4 {
+    background-color: rgb(123, 226, 63);
+    width: 300px;
+    height: 300px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 15px;
+  }
+  .project5 {
+    background-color: rgb(118, 109, 126);
+    width: 300px;
+    height: 300px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 15px;
+  }
+  .project6 {
+    background-color: rgb(226, 43, 171);
+    width: 300px;
+    height: 300px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 15px;
+  }
+  
+    
 
 @media only screen and (max-width: 768px;) 
 
@@ -68,8 +120,6 @@ h2 {
   flex-wrap; 
 }
  
-header, nav, section, aside, footer {
+header, nav, footer {
   flex-wrap;
 }
-
-
