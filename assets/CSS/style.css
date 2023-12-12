@@ -1,155 +1,239 @@
 header {
    
-    background-color: rgb(157, 209, 209);
+    background-color: rgb(206, 211, 221);
     border-radius: 15px; /*creates rounded corners*/
     align-self: auto;
     color: rgb(117, 117, 128);
     text-align: left;
     width: 100%;
-    margin: 5px 0px;
+    margin: 20px, 20px, 20px, 20px;
+    padding: 20px;
+}/*make all font the same color*/
+a, p, h2, h3, h4 {
+  font-family:Arial, Helvetica, sans-serif;
+  color: rgb(81, 81, 88);
+} 
+
+h4 {
+  text-align: center;
 }
+ h1 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 50px;
+ }
+/*make all font the same color*/
+a, p, h2, h3, h4 {
+  font-family:Arial, Helvetica, sans-serif;
+  color: rgb(81, 81, 88);
+} 
+
+
  nav {
   border: 0px solid grey;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(81, 81, 88);
   border-radius: 15px; /*creates rounded corners*/
-    align-self: auto;
-  background-color: rgb(157, 209, 209);
+  align-self: auto;
+  background-color: rgb(206, 235, 235);
   color: rgb(117, 117, 128);
   text-align: center;
   width: 100%;
-  margin: 5px 0px;
+  margin: 1px 0px;
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+nav a {
+  padding: 0 8px;
+}
+/*created a nav left and nav right in order to allow seperation*/
+.nav-left, .nav-right {
+display:flex;
+
 }
 
-a, p, h1, h2, h3 {
-  color: rgb(117, 117, 128);
- 
-}
-  .button-bar {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 10px;
+.nav-right {
+  flex-wrap: wrap;
+
   }
-
-  
- 
 
   body {
     font-family: Arial, sans-serif;
-    margin: 0;
+    background-color: white;
+    color: rgb(81, 81, 88);
+    margin: 20px;
     padding: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     
   }
-
+/*container to hold seperate items/projects*/
   .container {
     position: relative;
     display: flex;
     flex-direction:row;
     justify-content: space-between;
     align-items: center;
-    height: 600px;
+    min-height: 700px;
     align-items: center; /*aligns text*/
     flex-wrap: wrap;
-    column-gap: 1em;
-    row-gap: 1em;
-   
+    flex-direction: row-reverse;
+    
+    margin: 10px; 
   }
-
+.container div {
+  padding: 16px;
+}
   img {
     max-width: 100%;
-    height: auto;
+    height: 200px;
   }
 
-.text-block {
- position:absolute;
- bottom: 80px;
- right: 80px;
- padding-left: 20px;
- padding-right: 20px;
-
-}
-
-  .about {
-    background-color: rgb(157, 209, 209);
-    width: 300px;
-    height: 300px;
+   .project1 {
+    background-color: rgb(206, 211, 221);
+    min-width: 100%; /*removed self-align and added min-width
+     & min-height to make larger than the others*/
+    min-height: 300px;
+    background-image: url('assets/images/Lrg round cog.jpg'); 
+          background-size: cover; 
+      background-position: center;
     font-size: 20px;
     text-align: center;
-    border-radius: 15px; /*creates rounded corners*/
+    border-radius: 15px;
+    margin-bottom: 10px;  
+    margin-left: 0px;
+
+   }
+
+    .about {
+    
+      background-color: rgb(215, 220, 230);
+      min-width: 300px;
+      min-height: 100px;
+      font-size: 17px;
+      text-align: center;
+      border-radius: 15px ; /*creates rounded corners*/
+      align-self: auto;
+      margin-bottom: 10px;
+      margin-left: 0px;
+      
+    }    
+  
+  .contact {
+   
+    background-color: rgb(215, 220, 230);
+    width: 300px;
+    min-height: 300px;
+    font-size: 17px;
+    text-align: center;
+    border-radius: 15px ; /*creates rounded corners*/
     align-self: auto;
+    margin-bottom: 10px;
+    margin-left: 0px;
     
   }
-  .contact {
-    background-color: rgb(157, 209, 209);
-    width: 300px;
-    height: 300px;
-    font-size: 20px;
-    text-align: center;
-    border-radius: 15px;
-  }
-  .project1 {
-    background-color: rgb(157, 209, 209);
-    width: 300px;
-    height: 300px;
-    font-size: 20px;
-    text-align: center;
-    border-radius: 15px;
-  }
+   
   .project2 {
-    background-color: rgb(157, 209, 209);
+  
+    background-color: rgb(215, 220, 230);
     width: 300px;
-    height: 300px;
-    font-size: 20px;
+    min-height: 300px;
+    font-size: 17px;
     text-align: center;
-    border-radius: 15px;
+    border-radius: 15px ; /*creates rounded corners*/
+    align-self: auto;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    
+
   }
 
 .project3 {
-  background-color: rgb(157, 209, 209);
-  width: 300px;
-  height: 300px;
-  font-size: 20px;
-  text-align: center;
-  border-radius: 15px;
+  
+  background-color: rgb(215, 220, 230);
+    width: 300px;
+    min-height: 300px;
+    font-size: 17px;
+    text-align: center;
+    border-radius: 15px ; /*creates rounded corners*/
+    align-self: auto;
+    margin-bottom: 10px;
+    margin-left: 0px;
+  
 }
   
   .project4 {
-    background-color: rgb(157, 209, 209);
+    
+    background-color: rgb(215, 220, 230);
     width: 300px;
-    height: 300px;
-    font-size: 20px;
+    min-height: 300px;
+    font-size: 17px;
     text-align: center;
-    border-radius: 15px;
-  }
-  .project5 {
-    background-color: rgb(157, 209, 209);
-    width: 300px;
-    height: 300px;
-    font-size: 20px;
-    text-align: center;
-    border-radius: 15px;
+    border-radius: 15px ; /*creates rounded corners*/
+    align-self: auto;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    
   }
 
+  .project5 {
+    
+    background-color: rgb(215, 220, 230);
+    width: 300px;
+    min-height: 300px;
+    font-size: 17px;
+    text-align: center;
+    border-radius: 15px ; /*creates rounded corners*/
+    align-self: auto;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    
+  }
 
 .project6 {
-  background-color: rgb(101, 207, 166);
-  width: 300px;
-  height: 300px;
-  font-size: 20px;
-  text-align: center;
-  border-radius: 15px;
+  
+  background-color: rgb(215, 220, 230);
+    width: 300px;
+    min-height: 300px;
+    font-size: 17px;
+    text-align: center;
+    border-radius: 15px ; /*creates rounded corners*/
+    align-self: auto;
+    margin-bottom: 10px;
+    margin-left: 0px;
+  
 }
 
 .project7 {
-  background-color: rgb(221, 160, 81);
-  width: 300px;
-  height: 300px;
-  font-size: 20px;
-  text-align: center;
-  border-radius: 15px;
+  
+  background-color: rgb(215, 220, 230);
+    width: 300px;
+    min-height: 300px;
+    font-size: 17px;
+    text-align: center;
+    border-radius: 15px ; /*creates rounded corners*/
+    align-self: auto;
+    margin-bottom: 10px;
+    margin-left: 0px;
+  
 }
-    
+
+.project8 {
+  
+  background-color: rgb(215, 220, 230);
+    width: 300px;
+    min-height: 300px;
+    font-size: 17px;
+    text-align: center;
+    border-radius: 15px ; /*creates rounded corners*/
+    align-self: auto;
+    margin-bottom: 10px;
+    margin-left: 0px;
+  
+}
+
 footer {
   color: black;
     text-align: center;
@@ -173,3 +257,7 @@ header, nav, footer {
   flex-wrap: no-wrap;
 }
 }
+@media (max-width: 900px) {
+  nav, .nav-left, .nav-right, header {
+    justify-content: center;
+  }
